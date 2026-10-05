@@ -1,0 +1,419 @@
+/* =========================================================
+   INTERNHUB - AUTHENTICATION PAGES
+   ========================================================= */
+
+.auth-page {
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+
+/* ---------- LAYOUT ---------- */
+
+.auth-layout {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 42% 58%;
+}
+
+
+/* ---------- BRAND PANEL ---------- */
+
+.auth-brand-panel {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(96, 165, 250, 0.18),
+            transparent 32%
+        ),
+        linear-gradient(
+            145deg,
+            #172554,
+            #1e3a8a
+        );
+
+    color: #ffffff;
+}
+
+.auth-brand-panel::after {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    right: -220px;
+    bottom: -220px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
+}
+
+.auth-brand-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 480px;
+
+    margin: 0 auto;
+}
+
+.auth-brand-panel .brand {
+    margin-bottom: 90px;
+}
+
+.auth-brand-panel .brand-icon {
+    background: #ffffff;
+    color: #1d4ed8;
+}
+
+.auth-intro .eyebrow {
+    color: #93c5fd;
+}
+
+.auth-intro h1 {
+    max-width: 430px;
+
+    margin-bottom: 18px;
+
+    font-size: clamp(40px, 4vw, 58px);
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.auth-intro p {
+    max-width: 430px;
+
+    color: #bfdbfe;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ---------- BENEFITS ---------- */
+
+.auth-benefits {
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+
+    margin-top: 40px;
+
+    color: #dbeafe;
+
+    font-size: 13px;
+    font-weight: 550;
+}
+
+
+/* ---------- FORM PANEL ---------- */
+
+.auth-form-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+}
+
+.auth-form-wrapper {
+    width: min(100%, 470px);
+}
+
+.mobile-auth-brand {
+    display: none;
+}
+
+
+/* ---------- FORM HEADING ---------- */
+
+.form-heading {
+    margin-bottom: 30px;
+}
+
+.form-heading h2 {
+    margin-bottom: 8px;
+
+    color: #111827;
+
+    font-size: 29px;
+    letter-spacing: -0.7px;
+}
+
+.form-heading p {
+    color: var(--text-secondary);
+
+    font-size: 14px;
+}
+
+
+/* ---------- AUTH FORM ---------- */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 19px;
+}
+
+.form-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-label-row label {
+    margin: 0;
+}
+
+.forgot-link {
+    color: var(--primary);
+
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- PASSWORD ---------- */
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 65px;
+}
+
+.password-toggle {
+    position: absolute;
+
+    top: 50%;
+    right: 10px;
+
+    transform: translateY(-50%);
+
+    border: 0;
+    background: transparent;
+
+    color: var(--primary);
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.password-toggle:hover {
+    color: var(--primary-dark);
+}
+
+
+/* ---------- FORM GRID ---------- */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+/* ---------- CHECKBOX ---------- */
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 9px;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.checkbox-label input {
+    width: 15px;
+    height: 15px;
+
+    margin-top: 2px;
+
+    accent-color: var(--primary);
+}
+
+.terms-checkbox {
+    line-height: 1.5;
+}
+
+
+/* ---------- PASSWORD STRENGTH ---------- */
+
+.password-strength {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 4px;
+}
+
+.strength-bar {
+    width: 70px;
+    height: 4px;
+
+    border-radius: 99px;
+
+    background: #e2e8f0;
+}
+
+.strength-text {
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* ---------- FORM MESSAGE ---------- */
+
+.form-message {
+    min-height: 0;
+
+    color: var(--danger);
+
+    font-size: 12px;
+}
+
+.form-message.success {
+    color: var(--success);
+}
+
+.form-message.error {
+    color: var(--danger);
+}
+
+
+/* ---------- ERROR ---------- */
+
+.form-error {
+    min-height: 0;
+
+    color: var(--danger);
+
+    font-size: 11px;
+}
+
+
+/* ---------- DIVIDER ---------- */
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 25px 0 16px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: var(--border);
+}
+
+.auth-divider span {
+    white-space: nowrap;
+}
+
+
+/* ---------- TERMS ---------- */
+
+.auth-terms {
+    margin-top: 20px;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+.auth-switch {
+    margin-top: 22px;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+.auth-switch a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- INVALID STATE ---------- */
+
+.form-group.has-error input,
+.form-group.has-error select,
+.form-group.has-error textarea {
+    border-color: var(--danger);
+
+    box-shadow:
+        0 0 0 3px rgba(220, 38, 38, 0.07);
+}
+
+
+/* ---------- VALID STATE ---------- */
+
+.form-group.has-success input,
+.form-group.has-success select,
+.form-group.has-success textarea {
+    border-color: var(--success);
+}
+
+
+/* ---------- REGISTER FORM ---------- */
+
+#registerForm {
+    gap: 16px;
+}
+
+#registerForm .form-group {
+    gap: 6px;
+}

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | InternHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="app-page">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+
+            <a href="dashboard.html" class="brand">
+                <span class="brand-icon">IH</span>
+                <span>InternHub</span>
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                type="button"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="sidebar-profile">
+
+            <div class="user-avatar">
+                JD
+            </div>
+
+            <div class="sidebar-user-info">
+
+                <strong id="sidebarUserName">
+                    John Doe
+                </strong>
+
+                <span>
+                    Intern
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">
+                Workspace
+            </span>
+
+            <a
+                href="dashboard.html"
+                class="sidebar-link active"
+            >
+                <span class="nav-icon">D</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a
+                href="tasks.html"
+                class="sidebar-link"
+            >
+                <span class="nav-icon">T</span>
+                <span>My Tasks</span>
+                <span class="nav-count">4</span>
+            </a>
+
+            <a
+                href="projects.html"
+                class="sidebar-link"
+            >
+                <span class="nav-icon">P</span>
+                <span>Projects</span>
+            </a>
+
+            <a
+                href="submissions.html"
+                class="sidebar-link"
+            >
+                <span class="nav-icon">S</span>
+                <span>Submissions</span>
+            </a>
+
+
+            <span class="nav-section-title">
+                Account
+            </span>
+
+            <a
+                href="profile.html"
+                class="sidebar-link"
+            >
+                <span class="nav-icon">U</span>
+                <span>My Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                class="sidebar-link logout-button"
+                id="logoutButton"
+            >
+                <span class="nav-icon">↪</span>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="app-wrapper">
+
+        <header class="app-header">
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                id="sidebarOpen"
+            >
+                ☰
+            </button>
+
+
+            <div class="header-title">
+
+                <span class="breadcrumb">
+                    Workspace / Dashboard
+                </span>
+
+                <h1>Dashboard</h1>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    type="button"
+                    class="header-icon-button"
+                    id="notificationButton"
+                    aria-label="Notifications"
+                >
+                    N
+                    <span class="notification-dot"></span>
+                </button>
+
+
+                <a
+                    href="profile.html"
+                    class="header-user"
+                >
+
+                    <div class="user-avatar small">
+                        JD
+                    </div>
+
+                    <div>
+                        <strong>John Doe</strong>
+                        <span>Intern</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <main class="dashboard-main">
+
+            <!-- Welcome -->
+            <section class="welcome-section">
+
+                <div>
+
+                    <span class="eyebrow">
+                        Overview
+                    </span>
+
+                    <h2>
+                        Welcome back, John
+                    </h2>
+
+                    <p>
+                        Here's what's happening with your internship today.
+                    </p>
+
+                </div>
+
+                <a
+                    href="submit-task.html"
+                    class="btn btn-primary"
+                >
+                    + Submit Work
+                </a>
+
+            </section>
+
+
+            <!-- Statistics -->
+            <section class="stats-grid">
+
+                <article class="stat-card">
+
+                    <div class="stat-card-top">
+                        <span class="stat-label">
+                            Total Tasks
+                        </span>
+
+                        <span class="stat-icon">
+                            T
+                        </span>
+                    </div>
+
+                    <strong
+                        class="stat-value"
+                        id="totalTasks"
+                    >
+                        12
+                    </strong>
+
+                    <span class="stat-meta positive">
+                        8 completed
+                    </span>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-card-top">
+                        <span class="stat-label">
+                            In Progress
+                        </span>
+
+                        <span class="stat-icon">
+                            P
+                        </span>
+                    </div>
+
+                    <strong
+                        class="stat-value"
+                        id="activeTasks"
+                    >
+                        3
+                    </strong>
+
+                    <span class="stat-meta">
+                        Currently active
+                    </span>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-card-top">
+                        <span class="stat-label">
+                            Submissions
+                        </span>
+
+                        <span class="stat-icon">
+                            S
+                        </span>
+                    </div>
+
+                    <strong
+                        class="stat-value"
+                        id="totalSubmissions"
+                    >
+                        9
+                    </strong>
+
+                    <span class="stat-meta">
+                        2 under review
+                    </span>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-card-top">
+                        <span class="stat-label">
+                            Completion
+                        </span>
+
+                        <span class="stat-icon">
+                            %
+                        </span>
+                    </div>
+
+                    <strong
+                        class="stat-value"
+                        id="completionRate"
+                    >
+                        72%
+                    </strong>
+
+                    <span class="stat-meta positive">
+                        +8% this month
+                    </span>
+
+                </article>
+
+            </section>
+
+
+            <!-- Dashboard Grid -->
+            <section class="dashboard-grid">
+
+                <!-- Recent Tasks -->
+                <div class="dashboard-card large-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Recent Tasks</h3>
+                            <p>Your latest assigned tasks</p>
+                        </div>
+
+                        <a href="tasks.html" class="text-link">
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <div class="task-list">
+
+                        <article class="task-row">
+
+                            <div class="task-status status-progress"></div>
+
+                            <div class="task-info">
+
+                                <h4>
+                                    Build responsive landing page
+                                </h4>
+
+                                <span>
+                                    Frontend Development
+                                </span>
+
+                            </div>
+
+                            <span class="badge badge-warning">
+                                In Progress
+                            </span>
+
+                            <span class="task-date">
+                                Oct 08
+                            </span>
+
+                        </article>
+
+
+                        <article class="task-row">
+
+                            <div class="task-status status-pending"></div>
+
+                            <div class="task-info">
+
+                                <h4>
+                                    Create API documentation
+                                </h4>
+
+                                <span>
+                                    Documentation
+                                </span>
+
+                            </div>
+
+                            <span class="badge badge-neutral">
+                                Pending
+                            </span>
+
+                            <span class="task-date">
+                                Oct 10
+                            </span>
+
+                        </article>
+
+
+                        <article class="task-row">
+
+                            <div class="task-status status-completed"></div>
+
+                            <div class="task-info">
+
+                                <h4>
+                                    Setup project repository
+                                </h4>
+
+                                <span>
+                                    Development
+                                </span>
+
+                            </div>
+
+                            <span class="badge badge-success">
+                                Completed
+                            </span>
+
+                            <span class="task-date">
+                                Oct 03
+                            </span>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Progress -->
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Internship Progress</h3>
+                            <p>Overall completion</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-overview">
+
+                        <div class="progress-circle">
+                            <span>72%</span>
+                        </div>
+
+                        <h4>
+                            Good progress!
+                        </h4>
+
+                        <p>
+                            Keep completing your tasks to reach
+                            your internship goals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Recent Submissions -->
+                <div class="dashboard-card large-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Recent Submissions</h3>
+                            <p>Your latest submitted work</p>
+                        </div>
+
+                        <a
+                            href="submissions.html"
+                            class="text-link"
+                        >
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <div class="submission-table-wrapper">
+
+                        <table class="data-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Submission</th>
+                                    <th>Submitted</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <strong>
+                                            Portfolio Website
+                                        </strong>
+                                        <span>
+                                            Project
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        Oct 04, 2026
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Approved
+                                        </span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <strong>
+                                            Login UI
+                                        </strong>
+                                        <span>
+                                            Task
+                                        </span>
+                                    </td>
+
+                                    <td>
+                                        Oct 03, 2026
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Under Review
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Upcoming -->
+                <div class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Upcoming Deadlines</h3>
+                            <p>Don't miss your tasks</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="deadline-list">
+
+                        <div class="deadline-item">
+
+                            <div>
+                                <strong>
+                                    API Documentation
+                                </strong>
+
+                                <span>
+                                    Documentation
+                                </span>
+                            </div>
+
+                            <time>
+                                Oct 10
+                            </time>
+
+                        </div>
+
+
+                        <div class="deadline-item">
+
+                            <div>
+                                <strong>
+                                    Dashboard Module
+                                </strong>
+
+                                <span>
+                                    Frontend
+                                </span>
+                            </div>
+
+                            <time>
+                                Oct 12
+                            </time>
+
+                        </div>
+
+
+                        <div class="deadline-item">
+
+                            <div>
+                                <strong>
+                                    Final Project
+                                </strong>
+
+                                <span>
+                                    Capstone
+                                </span>
+                            </div>
+
+                            <time>
+                                Oct 20
+                            </time>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

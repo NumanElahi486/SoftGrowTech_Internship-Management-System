@@ -1,0 +1,271 @@
+/* =========================================================
+   INTERNHUB - TASKS
+   ========================================================= */
+
+
+/* ---------- TASK SUMMARY ---------- */
+
+.task-summary-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ---------- FILTER BAR ---------- */
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    padding: 13px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: #ffffff;
+}
+
+.search-field {
+    position: relative;
+
+    flex: 1;
+}
+
+.search-field input {
+    width: 100%;
+    height: 38px;
+
+    padding: 0 12px;
+
+    border: 1px solid var(--border-dark);
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    outline: none;
+
+    font-size: 12px;
+
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.search-field input::placeholder {
+    color: #a1aab8;
+}
+
+.search-field input:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.filter-bar select {
+    min-width: 145px;
+    height: 38px;
+
+    padding: 0 10px;
+
+    border: 1px solid var(--border-dark);
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #64748b;
+
+    outline: none;
+
+    font-size: 11px;
+}
+
+.filter-bar select:focus {
+    border-color: var(--primary);
+}
+
+
+/* ---------- TASK CONTAINER ---------- */
+
+.tasks-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+
+/* ---------- TASK CARD ---------- */
+
+.task-card {
+    padding: 21px;
+
+    border: 1px solid var(--border);
+    border-radius: 11px;
+
+    background: #ffffff;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        transform var(--transition);
+}
+
+.task-card:hover {
+    border-color: #d7dee8;
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+}
+
+.task-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 13px;
+}
+
+.task-category {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--primary);
+
+    font-size: 9px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.task-card h3 {
+    color: #1e293b;
+
+    font-size: 15px;
+    line-height: 1.35;
+}
+
+.task-description {
+    min-height: 43px;
+
+    margin-bottom: 18px;
+
+    color: #64748b;
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.task-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    padding: 12px 0;
+
+    border-top: 1px solid #f0f2f5;
+    border-bottom: 1px solid #f0f2f5;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+}
+
+.task-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-top: 15px;
+}
+
+.assigned-date {
+    color: #94a3b8;
+    font-size: 9px;
+}
+
+
+/* ---------- SUBMISSION FORM ---------- */
+
+.submission-form-layout .dashboard-card {
+    box-shadow: var(--shadow-sm);
+}
+
+
+/* ---------- PROFESSIONAL FORM ---------- */
+
+.professional-form input,
+.professional-form select,
+.professional-form textarea {
+    font-size: 12px;
+}
+
+.professional-form textarea {
+    min-height: 120px;
+}
+
+
+/* ---------- RESPONSIVE TABLE ---------- */
+
+.submission-data-table {
+    min-width: 800px;
+}
+
+
+/* ---------- ACTIVE FILTER ---------- */
+
+.task-card.is-hidden {
+    display: none;
+}
+
+
+/* ---------- NO RESULT ---------- */
+
+.no-results {
+    grid-column: 1 / -1;
+
+    padding: 50px 20px;
+
+    border: 1px dashed #cbd5e1;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.no-results h3 {
+    margin-bottom: 5px;
+
+    color: #334155;
+
+    font-size: 15px;
+}
+
+.no-results p {
+    color: #94a3b8;
+
+    font-size: 11px;
+}

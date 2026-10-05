@@ -1,0 +1,574 @@
+/* =========================================================
+   INTERNHUB - RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .container {
+        width: min(100% - 32px, 1000px);
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr 0.85fr;
+
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .app-wrapper {
+        margin-left: 225px;
+    }
+
+    .sidebar {
+        width: 225px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .submission-form-layout {
+        grid-template-columns: 1fr 280px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* ---------- LANDING ---------- */
+
+    .navbar {
+        min-height: 65px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-section {
+        padding: 65px 0 75px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-text > p {
+        margin-inline: auto;
+    }
+
+    .hero-actions,
+    .hero-trust {
+        justify-content: center;
+    }
+
+    .hero-dashboard-preview {
+        width: min(650px, 100%);
+
+        margin-inline: auto;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    /* ---------- AUTH ---------- */
+
+    .auth-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-brand-panel {
+        display: none;
+    }
+
+    .auth-form-panel {
+        min-height: 100vh;
+
+        padding: 40px 25px;
+    }
+
+    .mobile-auth-brand {
+        display: block;
+
+        margin-bottom: 45px;
+    }
+
+
+    /* ---------- APP ---------- */
+
+    .sidebar {
+        width: 260px;
+
+        transform: translateX(-100%);
+
+        transition: transform 220ms ease;
+
+        box-shadow:
+            15px 0 35px rgba(15, 23, 42, 0.08);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .sidebar-close {
+        display: block;
+    }
+
+    .app-wrapper {
+        margin-left: 0;
+    }
+
+    .mobile-menu-button {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app-header {
+        padding: 0 20px;
+    }
+
+    .dashboard-main,
+    .page-main {
+        width: min(100% - 32px, 760px);
+    }
+
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-summary {
+        max-width: none;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .task-summary-grid,
+    .submission-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .submission-form-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .submission-help {
+        position: static;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    .container {
+        width: calc(100% - 28px);
+    }
+
+    .btn {
+        min-height: 40px;
+    }
+
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        width: calc(100% - 24px);
+    }
+
+    .nav-actions .btn-outline {
+        display: none;
+    }
+
+    .brand {
+        font-size: 17px;
+    }
+
+    .brand-icon {
+        width: 31px;
+        height: 31px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero-section {
+        padding: 55px 0 65px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+        letter-spacing: -1.7px;
+    }
+
+    .hero-text > p {
+        font-size: 14px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-trust {
+        flex-direction: column;
+
+        gap: 7px;
+    }
+
+    .preview-content {
+        grid-template-columns: 55px 1fr;
+    }
+
+    .preview-main {
+        padding: 14px;
+    }
+
+    .preview-content {
+        min-height: 280px;
+    }
+
+    .preview-card {
+        height: 50px;
+    }
+
+    .preview-chart {
+        height: 100px;
+    }
+
+
+    /* ---------- SECTIONS ---------- */
+
+    .features-section,
+    .process-section {
+        padding: 65px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 32px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .features-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 22px;
+    }
+
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer-content {
+        flex-direction: column;
+
+        padding-bottom: 30px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
+
+    /* ---------- AUTH ---------- */
+
+    .auth-form-panel {
+        padding: 30px 18px;
+    }
+
+    .auth-form-wrapper {
+        width: 100%;
+    }
+
+    .mobile-auth-brand {
+        margin-bottom: 35px;
+    }
+
+    .form-heading h2 {
+        font-size: 25px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- APP HEADER ---------- */
+
+    .app-header {
+        min-height: 65px;
+
+        padding: 0 14px;
+    }
+
+    .header-actions {
+        gap: 7px;
+    }
+
+    .header-user > div:last-child {
+        display: none;
+    }
+
+    .header-icon-button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-title h1 {
+        font-size: 16px;
+    }
+
+    .breadcrumb {
+        font-size: 8px;
+    }
+
+
+    /* ---------- MAIN ---------- */
+
+    .dashboard-main,
+    .page-main {
+        width: calc(100% - 24px);
+
+        padding-top: 25px;
+    }
+
+    .welcome-section,
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .welcome-section h2,
+    .page-header h2 {
+        font-size: 24px;
+    }
+
+    .welcome-section .btn,
+    .page-header .btn {
+        width: 100%;
+    }
+
+
+    /* ---------- STATS ---------- */
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 9px;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .stat-value {
+        font-size: 23px;
+    }
+
+
+    /* ---------- DASHBOARD ---------- */
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .dashboard-card {
+        padding: 16px;
+    }
+
+    .task-row {
+        grid-template-columns: 5px minmax(0, 1fr);
+
+        padding: 13px 0;
+    }
+
+    .task-row .badge,
+    .task-row .task-date {
+        display: none;
+    }
+
+
+    /* ---------- TASKS ---------- */
+
+    .task-summary-grid,
+    .submission-summary {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 9px;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-bar select {
+        width: 100%;
+    }
+
+    .tasks-container {
+        grid-template-columns: 1fr;
+    }
+
+    .task-card {
+        padding: 17px;
+    }
+
+    .task-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-card-footer .btn {
+        width: 100%;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card > p {
+        min-height: auto;
+    }
+
+
+    /* ---------- FORMS ---------- */
+
+    .professional-form .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+
+
+    /* ---------- PROFILE ---------- */
+
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-summary {
+        padding: 20px;
+    }
+
+
+    /* ---------- SUBMISSION ---------- */
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table-filter {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .stats-grid,
+    .task-summary-grid,
+    .submission-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .preview-window {
+        display: none;
+    }
+
+    .auth-form-panel {
+        padding: 25px 14px;
+    }
+
+    .page-main,
+    .dashboard-main {
+        width: calc(100% - 20px);
+    }
+}

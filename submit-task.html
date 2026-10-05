@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Submit Work | InternHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/tasks.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body class="app-page">
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+
+            <a href="dashboard.html" class="brand">
+                <span class="brand-icon">IH</span>
+                <span>InternHub</span>
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                type="button"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="sidebar-profile">
+
+            <div class="user-avatar">
+                JD
+            </div>
+
+            <div class="sidebar-user-info">
+                <strong>John Doe</strong>
+                <span>Intern</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">
+                Workspace
+            </span>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span class="nav-icon">D</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="tasks.html" class="sidebar-link active">
+                <span class="nav-icon">T</span>
+                <span>My Tasks</span>
+            </a>
+
+            <a href="projects.html" class="sidebar-link">
+                <span class="nav-icon">P</span>
+                <span>Projects</span>
+            </a>
+
+            <a href="submissions.html" class="sidebar-link">
+                <span class="nav-icon">S</span>
+                <span>Submissions</span>
+            </a>
+
+            <span class="nav-section-title">
+                Account
+            </span>
+
+            <a href="profile.html" class="sidebar-link">
+                <span class="nav-icon">U</span>
+                <span>My Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                class="sidebar-link logout-button"
+                id="logoutButton"
+            >
+                <span class="nav-icon">↪</span>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="app-wrapper">
+
+        <header class="app-header">
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                id="sidebarOpen"
+            >
+                ☰
+            </button>
+
+            <div class="header-title">
+
+                <span class="breadcrumb">
+                    Tasks / Submit Work
+                </span>
+
+                <h1>Submit Work</h1>
+
+            </div>
+
+        </header>
+
+
+        <main class="page-main">
+
+            <section class="page-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        Work Submission
+                    </span>
+
+                    <h2>
+                        Submit your completed work
+                    </h2>
+
+                    <p>
+                        Provide the required details and submit your
+                        work for review.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <div class="submission-form-layout">
+
+                <section class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+                            <h3>Submission Details</h3>
+                            <p>
+                                Complete all required information.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <form
+                        id="taskSubmissionForm"
+                        class="professional-form"
+                    >
+
+                        <div class="form-group">
+
+                            <label for="submissionTask">
+                                Select Task
+                            </label>
+
+                            <select
+                                id="submissionTask"
+                                name="task"
+                                required
+                            >
+
+                                <option value="">
+                                    Select a task
+                                </option>
+
+                                <option value="landing-page">
+                                    Build responsive landing page
+                                </option>
+
+                                <option value="api-documentation">
+                                    Create API documentation
+                                </option>
+
+                                <option value="dashboard-module">
+                                    Dashboard Module
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="submissionTitle">
+                                Submission Title
+                            </label>
+
+                            <input
+                                type="text"
+                                id="submissionTitle"
+                                name="title"
+                                placeholder="Enter submission title"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="submissionDescription">
+                                Work Description
+                            </label>
+
+                            <textarea
+                                id="submissionDescription"
+                                name="description"
+                                rows="6"
+                                placeholder="Describe the work you completed..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="repositoryUrl">
+                                Repository / Project URL
+                            </label>
+
+                            <input
+                                type="url"
+                                id="repositoryUrl"
+                                name="repositoryUrl"
+                                placeholder="https://github.com/username/project"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="liveUrl">
+                                Live Project URL
+                            </label>
+
+                            <input
+                                type="url"
+                                id="liveUrl"
+                                name="liveUrl"
+                                placeholder="https://your-project.com"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="submissionNotes">
+                                Additional Notes
+                            </label>
+
+                            <textarea
+                                id="submissionNotes"
+                                name="notes"
+                                rows="4"
+                                placeholder="Add any additional information..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <div
+                            id="submissionMessage"
+                            class="form-message"
+                        ></div>
+
+
+                        <div class="form-actions">
+
+                            <a
+                                href="tasks.html"
+                                class="btn btn-outline"
+                            >
+                                Cancel
+                            </a>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                            >
+                                Submit for Review
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+
+                <aside class="submission-help">
+
+                    <div class="dashboard-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <h3>Submission Guidelines</h3>
+                            </div>
+
+                        </div>
+
+
+                        <ul class="guideline-list">
+
+                            <li>
+                                Make sure your work is complete.
+                            </li>
+
+                            <li>
+                                Provide a clear description of your work.
+                            </li>
+
+                            <li>
+                                Add a repository URL when applicable.
+                            </li>
+
+                            <li>
+                                Verify all links before submitting.
+                            </li>
+
+                            <li>
+                                Submitted work may be reviewed by your
+                                supervisor.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/tasks.js"></script>
+
+</body>
+</html>

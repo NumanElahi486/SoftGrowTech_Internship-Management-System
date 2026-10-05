@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Profile | InternHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/tasks.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body class="app-page">
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+
+            <a href="dashboard.html" class="brand">
+                <span class="brand-icon">IH</span>
+                <span>InternHub</span>
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                type="button"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="sidebar-profile">
+
+            <div class="user-avatar">
+                JD
+            </div>
+
+            <div class="sidebar-user-info">
+                <strong>John Doe</strong>
+                <span>Intern</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">
+                Workspace
+            </span>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span class="nav-icon">D</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="tasks.html" class="sidebar-link">
+                <span class="nav-icon">T</span>
+                <span>My Tasks</span>
+            </a>
+
+            <a href="projects.html" class="sidebar-link">
+                <span class="nav-icon">P</span>
+                <span>Projects</span>
+            </a>
+
+            <a href="submissions.html" class="sidebar-link">
+                <span class="nav-icon">S</span>
+                <span>Submissions</span>
+            </a>
+
+            <span class="nav-section-title">
+                Account
+            </span>
+
+            <a href="profile.html" class="sidebar-link active">
+                <span class="nav-icon">U</span>
+                <span>My Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                class="sidebar-link logout-button"
+                id="logoutButton"
+            >
+                <span class="nav-icon">↪</span>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="app-wrapper">
+
+        <header class="app-header">
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                id="sidebarOpen"
+            >
+                ☰
+            </button>
+
+            <div class="header-title">
+
+                <span class="breadcrumb">
+                    Account / Profile
+                </span>
+
+                <h1>My Profile</h1>
+
+            </div>
+
+        </header>
+
+
+        <main class="page-main">
+
+            <section class="page-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        Account Settings
+                    </span>
+
+                    <h2>
+                        Profile & Personal Information
+                    </h2>
+
+                    <p>
+                        Manage your personal and internship information.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <div class="profile-layout">
+
+                <!-- Profile Card -->
+                <aside class="profile-summary dashboard-card">
+
+                    <div class="profile-avatar">
+                        JD
+                    </div>
+
+                    <h3>
+                        John Doe
+                    </h3>
+
+                    <p>
+                        Frontend Development Intern
+                    </p>
+
+                    <span class="profile-status">
+                        Active Intern
+                    </span>
+
+
+                    <div class="profile-stats">
+
+                        <div>
+                            <strong>12</strong>
+                            <span>Tasks</span>
+                        </div>
+
+                        <div>
+                            <strong>9</strong>
+                            <span>Submissions</span>
+                        </div>
+
+                        <div>
+                            <strong>72%</strong>
+                            <span>Progress</span>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+
+                <!-- Profile Form -->
+                <section class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h3>
+                                Personal Information
+                            </h3>
+
+                            <p>
+                                Update your profile information below.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <form
+                        id="profileForm"
+                        class="professional-form"
+                    >
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="profileFirstName">
+                                    First Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profileFirstName"
+                                    value="John"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="profileLastName">
+                                    Last Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profileLastName"
+                                    value="Doe"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="profileEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="profileEmail"
+                                value="john.doe@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="profilePhone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="profilePhone"
+                                value="+92 300 1234567"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="profileInstitution">
+                                Institution / University
+                            </label>
+
+                            <input
+                                type="text"
+                                id="profileInstitution"
+                                value="University of Technology"
+                            >
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="profileField">
+                                    Field of Study
+                                </label>
+
+                                <select id="profileField">
+
+                                    <option selected>
+                                        Software Engineering
+                                    </option>
+
+                                    <option>
+                                        Computer Science
+                                    </option>
+
+                                    <option>
+                                        Information Technology
+                                    </option>
+
+                                    <option>
+                                        Data Science
+                                    </option>
+
+                                    <option>
+                                        Business
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="profileRole">
+                                    Internship Role
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profileRole"
+                                    value="Frontend Development Intern"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="profileBio">
+                                About Me
+                            </label>
+
+                            <textarea
+                                id="profileBio"
+                                rows="5"
+                                placeholder="Tell us about yourself..."
+                            >Passionate frontend development intern focused on building modern and user-friendly web experiences.</textarea>
+
+                        </div>
+
+
+                        <div
+                            id="profileMessage"
+                            class="form-message"
+                        ></div>
+
+
+                        <div class="form-actions">
+
+                            <button
+                                type="reset"
+                                class="btn btn-outline"
+                            >
+                                Cancel
+                            </button>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                            >
+                                Save Changes
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/profile.js"></script>
+
+</body>
+</html>

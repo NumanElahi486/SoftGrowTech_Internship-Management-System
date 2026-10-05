@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Projects | InternHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/tasks.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body class="app-page">
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+
+            <a href="dashboard.html" class="brand">
+                <span class="brand-icon">IH</span>
+                <span>InternHub</span>
+            </a>
+
+            <button
+                class="sidebar-close"
+                id="sidebarClose"
+                type="button"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="sidebar-profile">
+
+            <div class="user-avatar">
+                JD
+            </div>
+
+            <div class="sidebar-user-info">
+                <strong>John Doe</strong>
+                <span>Intern</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <span class="nav-section-title">
+                Workspace
+            </span>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <span class="nav-icon">D</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="tasks.html" class="sidebar-link">
+                <span class="nav-icon">T</span>
+                <span>My Tasks</span>
+            </a>
+
+            <a href="projects.html" class="sidebar-link active">
+                <span class="nav-icon">P</span>
+                <span>Projects</span>
+            </a>
+
+            <a href="submissions.html" class="sidebar-link">
+                <span class="nav-icon">S</span>
+                <span>Submissions</span>
+            </a>
+
+            <span class="nav-section-title">
+                Account
+            </span>
+
+            <a href="profile.html" class="sidebar-link">
+                <span class="nav-icon">U</span>
+                <span>My Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <button
+                type="button"
+                class="sidebar-link logout-button"
+                id="logoutButton"
+            >
+                <span class="nav-icon">↪</span>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="app-wrapper">
+
+        <header class="app-header">
+
+            <button
+                type="button"
+                class="mobile-menu-button"
+                id="sidebarOpen"
+            >
+                ☰
+            </button>
+
+            <div class="header-title">
+
+                <span class="breadcrumb">
+                    Workspace / Projects
+                </span>
+
+                <h1>Projects</h1>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <a
+                    href="profile.html"
+                    class="header-user"
+                >
+
+                    <div class="user-avatar small">
+                        JD
+                    </div>
+
+                    <div>
+                        <strong>John Doe</strong>
+                        <span>Intern</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <main class="page-main">
+
+            <section class="page-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        Internship Projects
+                    </span>
+
+                    <h2>
+                        My Projects
+                    </h2>
+
+                    <p>
+                        Track your assigned and ongoing internship projects.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <section class="project-grid">
+
+
+                <article class="project-card">
+
+                    <div class="project-card-top">
+
+                        <span class="project-type">
+                            Frontend
+                        </span>
+
+                        <span class="badge badge-warning">
+                            In Progress
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        InternHub Dashboard
+                    </h3>
+
+                    <p>
+                        Build a professional internship management
+                        dashboard with responsive frontend functionality.
+                    </p>
+
+
+                    <div class="project-progress">
+
+                        <div class="progress-label">
+
+                            <span>
+                                Progress
+                            </span>
+
+                            <strong>
+                                72%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+                            <span style="width: 72%;"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+                        <span>
+                            Started Oct 01, 2026
+                        </span>
+
+                        <span>
+                            Due Oct 20, 2026
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="submissions.html"
+                        class="btn btn-outline btn-small"
+                    >
+                        View Project
+                    </a>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-card-top">
+
+                        <span class="project-type">
+                            Development
+                        </span>
+
+                        <span class="badge badge-success">
+                            Completed
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Portfolio Website
+                    </h3>
+
+                    <p>
+                        Create a responsive personal portfolio website
+                        showcasing projects and technical skills.
+                    </p>
+
+
+                    <div class="project-progress">
+
+                        <div class="progress-label">
+
+                            <span>
+                                Progress
+                            </span>
+
+                            <strong>
+                                100%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+                            <span style="width: 100%;"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+                        <span>
+                            Started Sep 15, 2026
+                        </span>
+
+                        <span>
+                            Completed Oct 04, 2026
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="submissions.html"
+                        class="btn btn-outline btn-small"
+                    >
+                        View Submission
+                    </a>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <div class="project-card-top">
+
+                        <span class="project-type">
+                            Research
+                        </span>
+
+                        <span class="badge badge-neutral">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Technology Research Report
+                    </h3>
+
+                    <p>
+                        Research modern frontend development practices
+                        and prepare a structured technical report.
+                    </p>
+
+
+                    <div class="project-progress">
+
+                        <div class="progress-label">
+
+                            <span>
+                                Progress
+                            </span>
+
+                            <strong>
+                                15%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+                            <span style="width: 15%;"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+                        <span>
+                            Starts Oct 12, 2026
+                        </span>
+
+                        <span>
+                            Due Oct 25, 2026
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="tasks.html"
+                        class="btn btn-outline btn-small"
+                    >
+                        View Tasks
+                    </a>
+
+                </article>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/projects.js"></script>
+
+</body>
+</html>

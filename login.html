@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | InternHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-layout">
+
+        <!-- LEFT SIDE -->
+        <section class="auth-brand-panel">
+
+            <div class="auth-brand-content">
+
+                <a href="index.html" class="brand">
+                    <span class="brand-icon">IH</span>
+                    <span>InternHub</span>
+                </a>
+
+                <div class="auth-intro">
+
+                    <span class="eyebrow">
+                        Internship Management
+                    </span>
+
+                    <h1>
+                        Welcome back.
+                    </h1>
+
+                    <p>
+                        Sign in to manage your internship tasks,
+                        projects and submissions.
+                    </p>
+
+                </div>
+
+                <div class="auth-benefits">
+                    <div>✓ Manage assigned tasks</div>
+                    <div>✓ Submit your internship work</div>
+                    <div>✓ Track your progress</div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <section class="auth-form-panel">
+
+            <div class="auth-form-wrapper">
+
+                <div class="mobile-auth-brand">
+                    <a href="index.html" class="brand">
+                        <span class="brand-icon">IH</span>
+                        <span>InternHub</span>
+                    </a>
+                </div>
+
+                <div class="form-heading">
+
+                    <span class="eyebrow">
+                        Account Access
+                    </span>
+
+                    <h2>Sign in to your account</h2>
+
+                    <p>
+                        Enter your credentials to continue.
+                    </p>
+
+                </div>
+
+
+                <form id="loginForm" class="auth-form">
+
+                    <div class="form-group">
+
+                        <label for="loginEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <small class="form-error" id="loginEmailError"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <div class="form-label-row">
+
+                            <label for="loginPassword">
+                                Password
+                            </label>
+
+                            <a href="#" class="forgot-link">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+                        <div class="password-field">
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="loginPassword"
+                                aria-label="Show password"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                        <small class="form-error" id="loginPasswordError"></small>
+
+                    </div>
+
+
+                    <div class="form-options">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            <span>Remember me</span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div id="loginMessage" class="form-message"></div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary btn-full"
+                    >
+                        Sign In
+                    </button>
+
+                </form>
+
+
+                <div class="auth-divider">
+                    <span>New to InternHub?</span>
+                </div>
+
+
+                <a
+                    href="register.html"
+                    class="btn btn-outline btn-full"
+                >
+                    Create an Account
+                </a>
+
+
+                <p class="auth-terms">
+                    By continuing, you agree to the platform's
+                    terms and conditions.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
